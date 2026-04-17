@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 
-app = Flask(__name__)
+app = Flask(name)
 
 def add_numbers(a, b):
     return a + b
@@ -9,5 +9,6 @@ def add_numbers(a, b):
 def home():
     return jsonify({"status": "ok", "message": "Hello from gp1-demo!"})
 
-if name == "__main__":
+if name == "main":
     app.run(host="0.0.0.0", port=8080)
+    
